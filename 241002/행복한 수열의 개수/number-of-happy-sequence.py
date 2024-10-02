@@ -4,12 +4,12 @@ grid =[[*map(int,input().split())] for _ in range(n)]
 sum = 0
 
 for row in range(n):
-    
+    count = 0
     for col in range(n):
+        k = grid[row][col]
+        count += 1
         if col+1 == n:
             continue
-        count = 1
-        k = grid[row][col]
         if k != grid[row][col+1]:
             continue
         else:
@@ -20,12 +20,12 @@ for row in range(n):
 
         
 for col in range(n):
-
+    count = 0
     for row in range(n):
+        k = grid[row][col]
+        count += 1
         if row+1 == n:
             continue
-        count = 1
-        k = grid[row][col]
         if k != grid[row+1][col]:
             continue
         else:
