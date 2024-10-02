@@ -11,6 +11,7 @@ for row in range(n):
         if col+1 == n:
             continue
         if k != grid[row][col+1]:
+            count = 0
             continue
         else:
             count += 1
@@ -27,6 +28,7 @@ for col in range(n):
         if row+1 == n:
             continue
         if k != grid[row+1][col]:
+            count = 0
             continue
         else:
             count += 1
