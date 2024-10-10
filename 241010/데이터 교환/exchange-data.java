@@ -6,8 +6,8 @@ public class Main {
         int temp;
 
         temp = c;
-        b = a;
         c = b;
+        b = a;
         a = temp;
 
         System.out.print(a + "\n" + b + "\n" + c);
